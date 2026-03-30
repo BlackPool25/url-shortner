@@ -24,7 +24,7 @@ def get_db():
 
 def generate_unique_short_code(db, length=6):
     while(True):
-        code = generator.generate_short_code()
+        code = generator.generate_short_code(length)
         
         exists = db.query(models.ShortURL).filter(models.ShortURL.short_code == code).count()
         
