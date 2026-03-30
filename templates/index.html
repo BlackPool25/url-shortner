@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Shortner Website</title>
+
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+
+    <div class="page-container">
+        <div class="page-header">
+            <div class="title">URL Shortner Service Using PostGres SQL</div>
+            <div class="info">A URL shortener is an online tool that converts long, complex web addresses (URLs) into short, unique aliases, often used to make links cleaner, easier to share, and trackable. These services, such as Bitly or TinyURL, automatically redirect users who click the short link to the original, lengthy website.</div>
+        </div>
+
+        <form action="/submit_form" method="post">
+            <label for="input_url">Enter the URL to shorten:</label>
+            <input type="text" id="input_url" name="input_url">
+            <button type="submit">Submit</button>
+        </form>
+        <div class="output">{{ result }}</div>
+    </div>
+    
+
+</body>
+</html>
